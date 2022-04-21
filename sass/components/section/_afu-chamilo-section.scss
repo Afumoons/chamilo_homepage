@@ -1,0 +1,26 @@
+.afu-chamilo-section {
+    @include grid-col-min(1);
+    width: 100%;
+    height: 200px;
+    // background-color: color(satu-lightest);
+    position: relative;
+    gap: 20px;
+    padding: 20px;
+
+    @include md {}
+
+    @include xl {
+        @include grid-col-min(3)
+    }
+
+    @include xxl {}
+
+    .item {
+        @include flex-column;
+        align-items: center;
+        justify-content: center;
+        background-color: color(satu-lightest);
+        border-radius: 5px;
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.257));
+    }
+}

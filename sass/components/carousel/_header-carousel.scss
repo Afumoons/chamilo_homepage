@@ -1,0 +1,126 @@
+// Header Carousel
+.swiper-container.header-carousel {
+  width: 100%;
+  height: 90vh;
+  box-sizing: border-box;
+  position: relative;
+  // margin-top: 8vh;
+  @include md {
+    height: 95vh;
+  }
+  @include xl {
+    height: 90vh;
+    margin-top: 0vh;
+  }
+  @include xxl{
+  }
+
+  .swiper-slide {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.125rem;
+    background: color(white);
+    position: relative;
+    /* Center slide text vertically */
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+    transition: $transition-slow;
+
+    img.gambar{
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .field-gambar {
+      @include flex-row;
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      img {
+        box-sizing: border-box;
+        position: static;
+        // width: 50%;
+        margin: 0;
+        padding: 0;
+        // height: 100%;
+        &.kiri {
+          object-fit: cover;
+          width: 30%;
+          @include xl {
+            width: 50%;
+          }
+        }
+        &.kanan {
+          width: 70%;
+          @include xl {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .atas {
+      @include isicarouselheader;
+
+      top: 18%;
+
+      @include md {
+        // top: 20%;
+      }
+    }
+
+    .kiri {
+      @include isicarouselheader;
+
+      @include md {
+        left: 15%;
+      }
+    }
+
+    .kanan {
+      @include isicarouselheader;
+      right: 10%;
+
+      @include xl {
+        right: 12%;
+      }
+      @include xxl {
+        right: 10%;
+      }
+    }
+
+    .bawah {
+      @include isicarouselheader;
+
+      @include md {
+        bottom: 20%;
+      }
+    }
+
+    .tengah {
+      @include isicarouselheader;
+    }
+
+    .background {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      opacity: 1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+
+      .kecil {
+        background-size: 150px;
+      }
+    }
+
+    &.swiper-slide-active {
+      // transition: $transition-slow;
+      // height: 100%;
+      // transform: translateY(0);
+    }
+  }
+}

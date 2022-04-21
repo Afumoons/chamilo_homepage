@@ -1,0 +1,61 @@
+.wizard {
+    &.vertical-wizard{
+        .steps {
+            ul {
+                li {
+                    &.first {
+                        a {
+                            border-radius: 10px 10px 0 0;
+                        }
+                    }
+
+                    &.last {
+                        a {
+                            border-radius: 0 0 10px 10px;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .steps {
+        ul {
+            li {
+                &.first {
+                    a {
+                        border-radius: 10px 0 0 10px;
+                    }
+                }
+
+                &.last {
+                    a {
+                        border-radius: 0 10px 10px 0;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .actions {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.small,
+small {
+    font-size: 0.775em !important;
+}

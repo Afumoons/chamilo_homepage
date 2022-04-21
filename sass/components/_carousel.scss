@@ -1,0 +1,13 @@
+// html,
+// body {
+//     //* important (body harus position relative agar carousel tidak collapse)
+//     // position: relative;
+//     // height: 75vh;
+// }
+.swiper-container {
+  transition: $transition-slower;
+}
+
+@import "carousel/berita-carousel";
+@import "carousel/header-carousel";
+@import "carousel/information-carousel";

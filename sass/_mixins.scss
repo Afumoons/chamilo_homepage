@@ -1,0 +1,253 @@
+@mixin sm {
+  @media screen and (min-width:#{$sm}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width:#{$md}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width:#{$lg}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width:#{$xl}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width:#{$xxl}) {
+    @content;
+  }
+}
+
+@mixin grid-col-min($columns:1, $min:0, $custom :null) {
+  display: grid;
+
+  @if ($custom !=null) {
+    @if($min<1) {
+      grid-template-columns: repeat($columns, $custom);
+    }
+
+    @else {
+      grid-template-columns: repeat($columns, minmax($min, $custom));
+    }
+  }
+
+  @else {
+    @if ($min < 1) {
+      grid-template-columns: repeat($columns, 1fr);
+    }
+
+    @else {
+      grid-template-columns: repeat($columns, minmax($min, 1fr));
+    }
+  }
+
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin font1 {
+  font-family: "Poppins", sans-serif;
+}
+
+// @mixin font2 {
+//   font-family: "Roboto Mono", monospace;
+// }
+
+@mixin button {
+  color: black;
+  padding: 8px 25px;
+  // padding: 14px 20px 16px 19px;
+  transition: $transition-slow;
+  font-size: 10px;
+
+  border: 1px rgba(112, 112, 112, 1) solid {
+    radius: 40px;
+  }
+
+  @include xl {
+    padding: 10px 2em;
+    font-size: 11px;
+
+    border: 2px rgba(112, 112, 112, 1) solid {
+      radius: 40px;
+    }
+  }
+
+  @include xlbig {
+    padding: 1em 2em;
+  }
+
+  &:hover {
+    background-color: color(white-darkest);
+    color: color(white-light);
+  }
+}
+
+@mixin button-product {
+  color: black;
+  padding: 8px 12.85px;
+  // padding: 14px 20px 16px 19px;
+  transition: $transition-slow;
+  font-size: 10px;
+
+  border: 2px rgba(112, 112, 112, 1) solid {
+    radius: 40px;
+  }
+
+  @include md {
+    padding: 1em 2em;
+    font-size: 11px;
+  }
+
+  &:hover {
+    @include xl {
+      background-color: color(white-darkest);
+      color: color(white-light);
+    }
+  }
+}
+
+@mixin isicarouselheader {
+  @include flex-column;
+  box-sizing: border-box;
+  position: absolute;
+  justify-content: center;
+  transition: $transition-slow;
+  height: 100%;
+  width: 50%;
+
+  //   @include md {
+  //     width: 25em;
+  //     padding: 0;
+  //   }
+
+  //   .logo {
+  //     width: 100%;
+  //     max-width: 78px;
+  //     margin-bottom: 14px;
+
+  //     @include md {
+  //       margin-bottom: 2em;
+  //       max-width: 165px;
+  //     }
+  //   }
+  .judul {
+    @include font1;
+    color: color(enam);
+    font-size: 1rem;
+    margin: 0 0 0.5714285714285714em 0;
+    text-align: left;
+    filter: drop-shadow(0.07em 0.07em 1px color(text-dark));
+
+    @include md {
+      font-size: 1.5rem;
+    }
+
+    @include xl {
+      font-size: 2rem;
+      margin: 0 0 0.3em 0;
+    }
+
+    @include xxl {
+      font-size: 3rem;
+    }
+  }
+
+  .teks {
+    @include font1;
+    text-align: left;
+
+    font: {
+      size: 0.7875rem;
+    }
+
+    filter: drop-shadow(0.07em 0.07em 1px color(text-light));
+
+    color: color(text-dark);
+    margin: 0;
+    z-index: 2;
+
+    @include md {
+      font-size: 1rem;
+    }
+
+    @include xl {
+      font-size: 1.25rem;
+    }
+
+    @include xxl {
+      font-size: 1.5rem;
+    }
+  }
+
+  .container-button {
+    @include flex-column;
+
+    @include md {
+      @include flex-row;
+    }
+
+    .button {
+      z-index: 2;
+      padding: 14px 20px 16px 19px;
+      border-radius: 40px;
+      border: rgba(112, 112, 112, 1) solid 2px;
+      color: black;
+      margin-bottom: 1em;
+      @include font1;
+      font-size: 0.6875rem;
+
+      @include xl {
+        margin-bottom: 0;
+        margin-right: 1em;
+      }
+
+      &:nth-child(2n) {
+        border: white 1px solid;
+        color: grey;
+        background-color: rgb(67, 67, 67);
+      }
+    }
+  }
+}
+
+@mixin judul {
+  @include font1;
+
+  font: {
+    size: 10px;
+  }
+
+  color: black;
+
+  transition: $transition-slower;
+
+  @include md {
+    font-size: 36px;
+  }
+}
+
+@mixin fullposition {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
