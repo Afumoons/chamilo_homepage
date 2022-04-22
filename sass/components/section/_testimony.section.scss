@@ -2,21 +2,21 @@
     @include flex-column;
     align-items: center;
     padding: 50px 0;
-    background-color: color(black);
-    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+    // background-color: color(black);
+    // box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
 
     .judul {
-        color: color(text-light);
+        color: color(text-darker);
 
         @include xl {
-            font-size: 1.5rem;
+            font-size: 24px;
             font-weight: bold;
 
         }
     }
 
     .deskripsi {
-        color: color(text-light);
+        color: color(text-darker);
 
         @include xl {
             font-size: 18px;

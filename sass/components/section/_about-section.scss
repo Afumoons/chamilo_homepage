@@ -12,29 +12,23 @@
     }
 
     .top-line {
-        @include xl {
-            background-color: color(tiga);
-            margin-bottom: 50px;
-            height: 2px;
-            width: 50%;
-        }
+        background-color: color(tiga);
+        margin-bottom: 50px;
+        height: 2px;
+        width: 50%;
     }
 
     .bottom-line {
-        @include xl {
-            background-color: color(tiga);
-            height: 2px;
-            margin-top: 50px;
-            width: 25%;
-        }
+        background-color: color(tiga);
+        height: 2px;
+        margin-top: 50px;
+        width: 25%;
     }
 
 
     .row {
-        @include xl {
-            @include flex-row;
-            justify-content: space-between;
-        }
+        @include flex-row;
+        justify-content: space-between;
 
         .judul {
             text-align: left
@@ -42,10 +36,8 @@
 
         .kiri,
         .kanan {
-            @include xl {
-                @include flex-column;
-                width: 48%;
-            }
+            @include flex-column;
+            width: 48%;
         }
     }
 }

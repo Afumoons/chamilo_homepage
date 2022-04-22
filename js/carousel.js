@@ -55,6 +55,22 @@ var swiper = new Swiper(".coba-carousel", {
   },
 });
 
+var swiperheader = new Swiper(".header-carousel", {
+  loop: true,
+  lazy: true,
+  //   centeredSlides: true,
+  autoplay: {
+    delay: 1000,
+    // disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // Default parameters
+  slidesPerView: 1,
+});
+
 var swipertestimoni = new Swiper(".testimony-carousel", {
   loop: true,
   lazy: true,

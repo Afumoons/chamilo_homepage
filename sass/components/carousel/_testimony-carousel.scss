@@ -27,29 +27,23 @@
         align-items: center;
 
         .field-gambar {
-            @include xl {
-                box-sizing: border-box;
-                margin-bottom: 10px;
-                width: 100%;
-            }
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            width: 100%;
 
             img {
-                @include xl {
-                    border-radius: 50%;
-                    border: 5px solid color(satu-light);
-                    width: 50%;
-                    filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.15));
-                }
+                border-radius: 50%;
+                border: 5px solid color(satu-light);
+                width: 50%;
+                filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.15));
             }
         }
 
         .field-teks {
-            @include xl {
-                height: 60%;
-                width: 100%;
-                @include flex-column;
-                justify-content: space-between;
-            }
+            height: 60%;
+            width: 100%;
+            @include flex-column;
+            justify-content: space-between;
 
             .deskripsi {
                 font-size: 14px;

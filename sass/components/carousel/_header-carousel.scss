@@ -1,0 +1,73 @@
+// html,
+// body {
+//     position: relative;
+//     height: 100%;
+// }
+
+.swiper.header-carousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+
+    .swiper-slide {
+        @include flex-column;
+        text-align: center;
+        height: auto;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: color(satu-lightest);
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.257));
+
+        /* Center slide text vertically */
+        justify-content: center;
+        align-items: center;
+
+        .gambar {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(0.7) brightness(0.2);
+        }
+
+        .item {
+            @include fullposition;
+            @include flex-column;
+            align-items: flex-start;
+            justify-content: center;
+            position: absolute;
+            padding: 20px 20% 20px 10%;
+
+            .judul {
+                color: color(text-light);
+                font-size: 40px;
+                margin: 0 0 20px 0;
+                text-align: left;
+            }
+
+            .deskripsi {
+                color: color(text-light);
+                font-size: 28px;
+                margin: 0 0 20px 0;
+                text-align: left
+            }
+
+            .field-link {
+                @include flex-row;
+
+                .link {
+                    background-color: color(satu);
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    color: white;
+                    padding: 10px 20px;
+                    margin: 0 20px 0 0;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
