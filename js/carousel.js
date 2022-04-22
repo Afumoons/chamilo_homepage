@@ -86,11 +86,6 @@ var swipertestimoni = new Swiper(".testimony-carousel", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
   },
 });
 
