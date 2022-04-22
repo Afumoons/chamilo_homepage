@@ -1,0 +1,51 @@
+.about-section {
+    @include flex-column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 0;
+    width: 100%;
+
+
+    .top-line,
+    .bottom-line {
+        filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.55));
+    }
+
+    .top-line {
+        @include xl {
+            background-color: color(tiga);
+            margin-bottom: 50px;
+            height: 2px;
+            width: 50%;
+        }
+    }
+
+    .bottom-line {
+        @include xl {
+            background-color: color(tiga);
+            height: 2px;
+            margin-top: 50px;
+            width: 25%;
+        }
+    }
+
+
+    .row {
+        @include xl {
+            @include flex-row;
+            justify-content: space-between;
+        }
+
+        .judul {
+            text-align: left
+        }
+
+        .kiri,
+        .kanan {
+            @include xl {
+                @include flex-column;
+                width: 48%;
+            }
+        }
+    }
+}

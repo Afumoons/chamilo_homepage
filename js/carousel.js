@@ -17,10 +17,11 @@
 // });
 
 var swiper = new Swiper(".coba-carousel", {
-  spaceBetween: 30,
-  centeredSlides: true,
+  loop: true,
+  lazy: true,
+  //   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 1000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -30,6 +31,66 @@ var swiper = new Swiper(".coba-carousel", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
+
+var swipertestimoni = new Swiper(".testimony-carousel", {
+  loop: true,
+  lazy: true,
+  //   centeredSlides: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
   },
 });
 
