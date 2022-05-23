@@ -30,6 +30,7 @@
     .row {
         @include flex-row;
         justify-content: space-between;
+        width: 100%;
 
         .judul {
             align-self: flex-start;
