@@ -32,7 +32,11 @@
         justify-content: space-between;
 
         .judul {
-            text-align: left
+            align-self: flex-start;
+            border-bottom: 1px solid rgb(238, 238, 238);
+            padding-bottom: 12px;
+            text-align: left;
+            width: 100%
         }
 
         .kiri,
