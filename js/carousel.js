@@ -3,7 +3,7 @@
 //     lazy: true,
 //     slidesPerView: "auto",
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     centeredSlides: true,
 //     pagination: {
@@ -21,7 +21,7 @@ var swiper = new Swiper(".coba-carousel", {
   lazy: true,
   //   centeredSlides: true,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -60,7 +60,7 @@ var swiperheader = new Swiper(".header-carousel", {
   lazy: true,
   //   centeredSlides: true,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
     // disableOnInteraction: false,
   },
   pagination: {
@@ -76,7 +76,7 @@ var swipertestimoni = new Swiper(".testimony-carousel", {
   lazy: true,
   //   centeredSlides: true,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -109,7 +109,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
   loop: true,
   lazy: true,
   effect: "slide",
-  speed: 1000,
+  speed: 2000,
   // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
   slidesPerView: 1,
   spaceBetween: 19,
@@ -140,7 +140,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
 //     loop: true,
 //     lazy: true,
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     slidesPerView: 2,
 //     spaceBetween: 8,
@@ -176,7 +176,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
 //     lazy: true,
 //     slidesPerView: 1,
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     centeredSlides: true,
 //     pagination: {
@@ -198,7 +198,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
 //     lazy: true,
 //     // slidesPerColumn: 4,
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     slidesPerView: 2,
 //     spaceBetween: 19,
@@ -232,7 +232,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
 //     allowSlidePrev: true,
 //     noSwiping: false,
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     slidesPerView: 3,
 //     spaceBetween: 19,
@@ -262,7 +262,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
 //     loop: true,
 //     lazy: true,
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     slidesPerView: 2,
 //     pagination: {
@@ -296,7 +296,7 @@ var swiperinformation = new Swiper(".swiper-container.information-carousel", {
 //     loop: true,
 //     lazy: true,
 //     effect: "slide",
-//     speed: 1000,
+//     speed: 2000,
 //     // 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip'
 //     slidesPerView: 2,
 //     spaceBetween: 20,

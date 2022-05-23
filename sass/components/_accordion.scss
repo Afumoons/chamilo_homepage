@@ -10,17 +10,17 @@ input.accordion {
 }
 
 // Layout
-.row {
-    display: flex;
+// .row {
+//     display: flex;
 
-    .col {
-        flex: 1;
+//     .col {
+//         flex: 1;
 
-        &:last-child {
-            margin-left: 1em;
-        }
-    }
-}
+//         &:last-child {
+//             margin-left: 1em;
+//         }
+//     }
+// }
 
 /* Accordion styles */
 .tabs {
