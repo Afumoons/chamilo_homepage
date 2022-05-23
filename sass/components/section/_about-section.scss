@@ -1,8 +1,9 @@
 .about-section {
     @include flex-column;
     align-items: center;
+    border-bottom: 1px solid rgb(238, 238, 238);
     box-sizing: border-box;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
     width: 100%;
 
 

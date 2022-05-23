@@ -76,6 +76,10 @@ input.accordion {
             background: darken($midnight, 10%);
         }
     }
+
+    iframe {
+        width: 100%;
+    }
 }
 
 // :checked
